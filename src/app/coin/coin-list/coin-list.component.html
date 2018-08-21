@@ -1,0 +1,12 @@
+<ion-content class="content">
+	<ion-list>
+		<ion-item *ngFor="let coin of (coins$ | async)" [routerLink]="['..','detail', coin.id]">
+			<ion-icon name="logo-bitcoin" slot="start"></ion-icon>
+			{{coin.name}}
+			<!-- <div [class]="hasGoneUpToday(coin) ? 'up' : 'down'" slot="end">
+				{{coin.quotes.USD.percent_change_24h}}
+				<ion-icon [name]="hasGoneUpToday(coin) ? 'arrow-dropup' : 'arrow-dropdown'"></ion-icon>
+			</div> -->
+		</ion-item>
+	</ion-list>
+</ion-content>

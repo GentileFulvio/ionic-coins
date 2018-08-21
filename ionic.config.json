@@ -1,7 +1,7 @@
 {
-  "name": "myFirstIonicAngular",
-  "integrations": {
-    "cordova": {}
-  },
-  "type": "angular"
+	"name": "myFirstIonicAngular",
+	"integrations": {
+		"cordova": {}
+	},
+	"type": "angular"
 }
