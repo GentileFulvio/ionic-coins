@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
-import {map} from 'rxjs/operators';
+import {map, shareReplay, share, publishReplay, refCount} from 'rxjs/operators';
 
 interface Response {
 	data: {

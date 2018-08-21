@@ -1,3 +1,6 @@
-<p>
+<p *ngIf="coin$ | async; else loading">
   {{coin$ | async | json}}
 </p>
+<ng-template #loading>
+  <ion-spinner></ion-spinner>
+</ng-template>
